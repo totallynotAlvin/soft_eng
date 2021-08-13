@@ -1,9 +1,9 @@
 TARGET=Hello
 
-all: ${TARGET}.class
+all: $(TARGET).class
 
 %.class : %.java
-    javac $<
+	java $<
 
 run : ${TARGET}.class
-    java ${TARGET}
+	java ${TARGET}
